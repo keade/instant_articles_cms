@@ -1,0 +1,8 @@
+<h1>toode</h1>
+
+<% if user_signed_in? %>
+	<%= current_user.email %> Signed In
+<% end %>
+<%= link_to 'edit profile', edit_user_registration_path %>
+<%= link_to 'new user', new_user_registration_path %>
+<%= link_to 'new post', new_post_path %>
